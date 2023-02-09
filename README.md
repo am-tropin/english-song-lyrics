@@ -8,7 +8,7 @@ Libraries: numpy, pandas, BeautifulSoup4, requests, re, nltk, sklearn, scipy, ma
 ## Table of contents
 - [Datasets](#datasets)
 - [Machine learning approach](#machine-learning-approach)
-- [The Trainer 1: Fill in the gaps](#the-trainer-1)
+- [The Trainer 1: Fill in the gaps](#the-trainer-1-fill-in-the-gaps)
 
 
 ## Datasets
