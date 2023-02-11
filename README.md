@@ -9,7 +9,7 @@ Libraries: numpy, pandas, BeautifulSoup4, requests, re, nltk, sklearn, scipy, ma
 - [Datasets](#datasets)
 - [Machine learning approach](#machine-learning-approach)
 - [The Trainer 1: Fill in the gaps](#the-trainer-1-fill-in-the-gaps)
-- [The Trainer 2: Find the signal word](#the-trainer-1-find-the-signal-word)
+- [The Trainer 2: Find the signal word](#the-trainer-2-find-the-signal-word)
 
 
 ## Datasets
@@ -27,7 +27,7 @@ Libraries: numpy, pandas, BeautifulSoup4, requests, re, nltk, sklearn, scipy, ma
 - The trainer of listening. You can choose the artist, their song and the frequency of replacing of random words with gaps. Open the lyrics with gaps (in file with a name like "lyrics_with_gaps_###.txt") in a new window. When you're listening the song, fill in the gaps in [this trainer](https://github.com/am-tropin/eng-lyrics-trainer/blob/main/trainer_for_listening.ipynb) and know your score! 
 
 
-## The Trainer 2: Fill the signal word
+## The Trainer 2: Find the signal word
 
 - The trainer of grammar. You can find all uses of the signal word in lyrics in our song collection. Set the signal word in [this trainer](https://github.com/am-tropin/eng-lyrics-trainer/blob/main/trainer_for_searching.ipynb) and know how to use it correctly! 
 
