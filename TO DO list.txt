@@ -1,2 +1,1 @@
 - to return blank strings between paragraphs - https://www.geeksforgeeks.org/beautifulsoup-scraping-paragraphs-from-html/
-- to add an exercise with signal words (to find all strings with given signal word for remembering)
