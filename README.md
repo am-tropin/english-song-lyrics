@@ -7,7 +7,7 @@ Libraries: numpy, pandas, BeautifulSoup4, requests, re, nltk, sklearn, scipy, ma
 
 ## Table of contents
 - [Datasets](#datasets)
-- [Machine learning approach](#machine-learning-approach)
+- [Machine learning approaches](#machine-learning-approaches)
 - [The Trainer 1: Fill in the gaps](#the-trainer-1-fill-in-the-gaps)
 - [The Trainer 2: Find the signal word](#the-trainer-2-find-the-signal-word)
 
@@ -17,9 +17,11 @@ Libraries: numpy, pandas, BeautifulSoup4, requests, re, nltk, sklearn, scipy, ma
 - The [code](https://github.com/am-tropin/eng-lyrics-trainer/blob/main/eng-lyrics-trainer/discography_collecting.ipynb) collects the [library of discographies](https://github.com/am-tropin/eng-lyrics-trainer/tree/main/discography) from https://www.allthelyrics.com/. 
 
 
-## Machine learning approach
+## Machine learning approaches
 
-- The problem is clustering of songs of bands with **Ronnie James Dio**. The given problem was solved by using **the scikit-learn K-means clustering** in the [clustering_of_Dio_bands.ipynb](https://github.com/am-tropin/eng-lyrics-trainer/blob/main/clustering_of_Dio_bands.ipynb) notebook. The result is in the [dio_clusters.csv](https://github.com/am-tropin/eng-lyrics-trainer/blob/main/dio_clusters.csv) file.
+- The first problem is **clustering** of songs of bands with **Ronnie James Dio**. The given problem was solved by using **the scikit-learn K-means clustering** in the [clustering_of_Dio_bands.ipynb](https://github.com/am-tropin/eng-lyrics-trainer/blob/main/clustering_of_Dio_bands.ipynb) notebook. The result is in the [dio_clusters.csv](https://github.com/am-tropin/eng-lyrics-trainer/blob/main/dio_clusters.csv) file.
+
+- The second problem is building a **text-based recommender** by one or a few songs. The given problem was solved by using **the scikit-learn cosine similiraty and Tf-idf vectorizer** in the [recommender_lyrics.ipynb](https://github.com/am-tropin/eng-lyrics-trainer/blob/main/recommender_lyrics.ipynb) notebook.
 
 
 ## The Trainer 1: Fill in the gaps
