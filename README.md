@@ -1,4 +1,4 @@
-# English Lyrics: Clustering & Trainer
+# English Song Lyrics: Clustering & Trainers
 
 The project is about processing lyrics of English-speaking artists.
 
