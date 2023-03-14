@@ -1,4 +1,4 @@
-# English Song Lyrics: Clustering & Trainers
+# English Song Lyrics: Clustering, Recommender & Trainers
 
 The project is about processing lyrics of English-speaking artists.
 
