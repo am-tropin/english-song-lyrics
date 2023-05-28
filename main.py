@@ -25,7 +25,7 @@ async def root():
 
 # without html
 
-@app.get("/range_calendar/{artist}_{song}_{n}")
+@app.get("/top_recommended/{artist}_{song}_{n}")
 async def get_top_recommended_lyrics(artist: str, song: str, n: int):
     return top_recommended_lyrics(artist, song, n).transpose().to_dict()
 

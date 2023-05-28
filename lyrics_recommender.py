@@ -69,6 +69,8 @@ target_artist = 'florence_the_machine'
 # In[39]:
 
 
+print()
+print("Enter an artist name from the list above:")
 target_artist = input()
 
 
@@ -104,7 +106,9 @@ target_song = 'No Light No Light'
 # In[40]:
 
 
-target_song = input()
+# print()
+# print("Enter an song name from the list above:")
+# target_song = input()
 
 
 # # 2. Creating the full lyrics base
