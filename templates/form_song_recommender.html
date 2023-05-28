@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English Song Recommender</title>
+</head>
+<body>
+<form method="post">
+    <input type="text" name="artist" value="Type artist"/>
+    <input type="text" name="song" value="Type song"/>
+    <input type="submit">
+</form>
+
+<p>Results: {{ result|safe }} </p>
+
+</body>
+</html>
