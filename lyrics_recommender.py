@@ -66,6 +66,12 @@ target_artist = 'florence_the_machine'
 # 'florence_the_machine'
 
 
+# In[39]:
+
+
+target_artist = input()
+
+
 # In[6]:
 
 
@@ -95,10 +101,10 @@ To choose the song:
 target_song = 'No Light No Light'
 
 
-# In[ ]:
+# In[40]:
 
 
-
+target_song = input()
 
 
 # # 2. Creating the full lyrics base

@@ -32,7 +32,7 @@ async def get_top_recommended_lyrics(artist: str, song: str, n: int):
 
 # with html
 
-@app.get("/top_html/{artist}_{date2}")
+@app.get("/top_html/{artist}_{song}_{n}")
 async def get_top_recomm_lyrics(artist: str, song: str, n: int):
     return {"Anniversaries in the range:": top_recommended_lyrics(artist, song, n)}
 
