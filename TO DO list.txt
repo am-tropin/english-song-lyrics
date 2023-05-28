@@ -1,1 +1,4 @@
-- to return blank strings between paragraphs - https://www.geeksforgeeks.org/beautifulsoup-scraping-paragraphs-from-html/
+1. To return blank strings between paragraphs - https://www.geeksforgeeks.org/beautifulsoup-scraping-paragraphs-from-html/
+2. To describe new fastAPI part in Readme
+3. To clear the code (docstrings etc)
+4. To download new artist and fix their input name with correct (queen -> Queen)
