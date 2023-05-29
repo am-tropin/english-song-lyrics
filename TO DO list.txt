@@ -2,3 +2,4 @@
 2. To describe new fastAPI part in Readme
 3. To clear the code (docstrings etc)
 4. To download new artist and fix their input name with correct (queen -> Queen)
+5. To write tests
