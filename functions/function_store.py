@@ -24,13 +24,7 @@ import random
 
 
 
-# In[ ]:
-
-
-
-
-
-# # For trainers
+# # 1. For working with discography
 
 # In[ ]:
 
@@ -62,6 +56,24 @@ def collect_song_list(artist):
 # In[ ]:
 
 
+def collect_full_discography():
+    full_discography_list = []
+    artist_list = collect_artist_list()
+
+    for artist in artist_list:
+        discography_df = pd.read_csv('discography/' + artist + '_discography_allthelyrics.csv', sep='\t', encoding='utf-8')
+        discography_df['artist'] = artist
+        discography_df['key'] = discography_df.apply(lambda x: x['artist'] + '__' + '_'.join(x['album'].split()) + '__' + '_'.join(x['song'].split()), axis=1)
+        full_discography_list.append(discography_df)
+
+    full_discography_df = pd.concat(full_discography_list, axis=0)[['key', 'artist', 'album', 'song', 'lyrics', 'link']]
+    
+    return full_discography_df.set_index('key')
+
+
+# In[ ]:
+
+
 # printing a list of titles in lexicographic order with division by the first letter
 
 def print_lexic_order_with_first_letter(list_list):
@@ -75,6 +87,8 @@ def print_lexic_order_with_first_letter(list_list):
         print(s)
     return 1
 
+
+# # 2. For trainers
 
 # In[ ]:
 
@@ -147,12 +161,6 @@ def answers_processing(correct_answers, gap_counter):
     print()
 
     return "Results: {0} from {1} ({2}%)".format(correct_cnt, gap_counter, round(100 * correct_cnt/gap_counter, 1))
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:
