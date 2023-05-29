@@ -36,7 +36,7 @@ import random
 
 
 def collect_artist_list():
-    path = "../discography/"
+    path = "discography/"
     dir_list = os.listdir(path)
     artist_list = [re.sub("_discography_allthelyrics.csv", "", d) for d in dir_list if "_discography_allthelyrics.csv" in d]
 
@@ -47,7 +47,7 @@ def collect_artist_list():
 
 
 def collect_discography_df(artist):
-    path = "../discography/"
+    path = "discography/"
     discography_df = pd.read_csv(path + artist + '_discography_allthelyrics.csv', sep='\t', encoding='utf-8')
 
     return discography_df
@@ -109,9 +109,9 @@ def add_gaps_to_lyrics(artist, song_title, string_frequency):
             fixed_song_list.append(s)
         string_counter += 1
     
-    with open("lyrics_with_gaps_" + "_".join(song_title.split()) + ".txt", 'w') as file:
+    with open("for_trainers/lyrics_with_gaps_" + "_".join(song_title.split()) + ".txt", 'w') as file:
         pass
-    with open("lyrics_with_gaps_" + "_".join(song_title.split()) + ".txt", 'w') as f:
+    with open("for_trainers/lyrics_with_gaps_" + "_".join(song_title.split()) + ".txt", 'w') as f:
         for s in fixed_song_list:
             f.write(f"{s}\n")
     
@@ -162,7 +162,7 @@ def print_strings_with_pattern(target_word):
     
     artist_list = collect_artist_list()
     target_dict_full = {}
-    path = "../discography/"
+    path = "discography/"
 
     for artist in artist_list:
         discography_df = pd.read_csv(path + artist + '_discography_allthelyrics.csv', sep='\t', encoding='utf-8')
@@ -184,7 +184,7 @@ def download_target_strings_to_txt(target_word):
     
     target_dict_full = print_strings_with_pattern(target_word)
     
-    with open("lyrics_with_target_word_[" + target_word + "].txt", 'w') as f:
+    with open("for_trainers/lyrics_with_target_word_[" + target_word + "].txt", 'w') as f:
         for artist in target_dict_full.keys():
             for d in target_dict_full[artist]:
                 for song in d.keys():
