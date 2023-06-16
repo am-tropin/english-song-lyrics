@@ -4,6 +4,8 @@ The project is about processing lyrics of English-speaking artists.
 
 Libraries: numpy, pandas, BeautifulSoup4, requests, re, nltk, sklearn, scipy, matplolib
 
+[![Code Climate](https://codeclimate.com/github/am-tropin/english-song-lyrics.svg)](https://codeclimate.com/github/am-tropin/english-song-lyrics)
+
 
 ## Table of contents
 - [Datasets](#datasets)
