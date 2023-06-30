@@ -25,6 +25,64 @@ Libraries: numpy, pandas, BeautifulSoup4, requests, re, nltk, sklearn, scipy, ma
 
 - The second problem is building a **text-based recommender** by one or a few songs. The given problem was solved by using **the scikit-learn cosine similarity and Tf-idf vectorizer** in the [recommender_lyrics.ipynb](https://github.com/am-tropin/eng-lyrics-trainer/blob/main/recommender_lyrics.ipynb) notebook.
 
+### Run locally:
+
+1. Clone the project:
+```bash
+  git clone https://github.com/am-tropin/english-song-lyrics
+```
+
+2. Go to the project directory:
+```bash
+  cd english-song-lyrics
+```
+
+<!-- Create vitual enviroment and install dependencies
+```bash
+  virtualenv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
+``` -->
+
+3. Start the server:
+```bash
+  uvicorn main:app --reload
+```
+
+4. Enter an artist name from the list above in the terminal, for example:
+```bash
+  florence_the_machine
+```
+
+5. Copy a song name from the list above in the terminal, for example:
+```bash
+  No Light No Light
+```
+
+6. Go to web-browser 
+```bash
+  http://127.0.0.1:8000/docs/
+```
+and use the following box: 
+- **Get Top Recommended Lyrics**. Type artist and song names, and amount of songs in the future top list.
+
+Or 
+
+5. Go to web-browser and use the following link to get the same info after typing the parameters:
+
+```bash
+  http://127.0.0.1:8000/top/_
+```
+
+Or 
+
+6. Go to web-browser and use the following type of links to get the same info in clear dictionary view:
+
+```bash
+  http://127.0.0.1:8000/top_html/florence_the_machine_No Light No Light_8
+```
+
+
 
 ## The Trainer 1: Fill in the gaps
 

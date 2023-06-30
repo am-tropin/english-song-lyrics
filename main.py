@@ -34,7 +34,7 @@ async def get_top_recommended_lyrics(artist: str, song: str, n: int):
 
 @app.get("/top_html/{artist}_{song}_{n}")
 async def get_top_recomm_lyrics(artist: str, song: str, n: int):
-    return {"Anniversaries in the range:": top_recommended_lyrics(artist, song, n)}
+    return {"Top recommended songs in the base:": top_recommended_lyrics(artist, song, n)}
 
 @app.get("/top/{form}")
 def form_post_top(request: Request):
